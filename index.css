@@ -1,0 +1,139 @@
+iframe {
+    pointer-events: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    background-image: url("bg_desctop.jpg") !important;
+    background-color: transparent !important;
+    background-size: cover !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto !important;
+    min-height: 100%;
+    width: 100%;
+    background-image: url("img_7.png") !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+}
+
+#root {
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(53, 57, 79, 0.6) 48.96%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+@font-face {
+    font-family: "Eurostile"; /* Имя шрифта */
+    font-weight: 400;
+    src: url("Eurostile-Reg.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "EurostileMed"; /* Имя шрифта */
+    font-weight: 700;
+    src: url("Eurostile-Med.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@media (min-width: 600px) {
+    body {
+        background-size: cover;
+        // background-image: url("") !important;
+    }
+    .MuiContainer-maxWidthLg {
+        max-width: 960px !important;
+    }
+
+    .Card_ProductGold_container {
+        margin: 0 auto;
+        max-width: 760px;
+    }
+    .Card_ProductGold_container .MuiGrid-item {
+        padding: 6px;
+    }
+
+    .Card_ProductGold_container .MuiGrid-item > .MuiBox-root {
+        width: 168px;
+    }
+
+    .AccountLine_container {
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    .Root_Header .Root_Header_description {
+        max-width: 440px;
+        margin: 16px auto 0;
+    }
+    .Root_Header {
+        margin: 0 auto;
+        max-width: 960px !important;
+    }
+    .Root_Footer {
+        margin: 0 auto;
+        max-width: 960px !important;
+    }
+    .Root_Content {
+    }
+    .Typography_Description {
+        max-width: 460px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 599px) {
+    body {
+        background-size: cover;
+        // background-image: url("") !important;
+        background-image: url("bg-modile-dragon.png") !important;
+        background-color: transparent !important;
+        background-repeat: no-repeat !important;
+        background-position: top center !important;
+    }
+
+    .Card_ProductGold_container .MuiGrid-item {
+        width: 50%;
+        padding-bottom: 8px;
+    }
+    .Card_ProductGold_container .MuiGrid-item:nth-child(odd) {
+        padding-right: 4px;
+    }
+    .Card_ProductGold_container .MuiGrid-item:nth-child(even) {
+        padding-left: 4px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        background-size: cover;
+        // background-image: url("") !important;
+        background-image: url("bg-modile-dragon.png") !important;
+        background-color: transparent !important;
+        background-repeat: no-repeat !important;
+        background-position: top center !important;
+    }
+    .Card_ProductGold_container .MuiGrid-item {
+        width: 100%;
+        padding-bottom: 8px;
+    }
+}
+
+.Root_Footer a:visited,
+.Root_Footer a,
+.Root_Header a:visited,
+.Root_Header a {
+    font-family: "Eurostile", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6d6f80;
+    text-decoration: none;
+}
+.Root_Footer a:hover {
+    color: #538ff6;
+}
