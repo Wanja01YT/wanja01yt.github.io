@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@font-face {
+    font-family: "Eurostile";
+    font-weight: 400;
+    src: url("Eurostile-Reg.ttf");
+}
+
+@font-face {
+    font-family: "EurostileMed";
+    font-weight: 600;
+    font-size: 24px;
+    src: url("Eurostile-Medium.otf");
+}
+
+@font-face {
+    font-family: "EurostileBold";
+    font-weight: 700;
+    src: url("");
+}
+
+.App {
+    text-align: center;
+    background-image: url("SO2_S4_Start_screen-2.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    min-height: 800px;
+    height: 100vh;
+    color: white;
+}
+.Eurostile {
+    font-family: "Eurostile", sans-serif;
+}
+.EurostileMed {
+    font-family: "EurostileMed", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 406px;
+    min-height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.button {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    padding-left: 60px;
+    height: 100%;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-links-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20px;
+    margin-right: 40px;
+}
+
+.social-links-desktop img:hover,
+.social-links-desktop a:hover {
+    cursor: pointer;
+}
+
+.social-link-icon {
+    opacity: 0.3;
+    margin-top: 15px;
+}
+
+.social-link-axlebolt {
+    margin-top: 35px;
+    width: 15px;
+    margin-left: 3px;
+}
+
+.footer-desktop {
+    opacity: 30%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-mobile {
+    display: none;
+}
+.footer > p {
+    margin: auto 0;
+}
+.social-links-mobile {
+    display: none;
+}
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        padding-left: 0;
+    }
+
+    .button {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        width: 90%;
+        min-height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto !important;
+    }
+
+    .social-links-desktop {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .social-link-axlebolt {
+        width: 200px;
+        opacity: 0.3;
+    }
+
+    .social-links-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 180px;
+    }
+
+    .links {
+        bottom: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        opacity: 30%;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+}
+
+.locales-container {
+    margin-right: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 25px 40px 0 0;
+}
+
+.locales-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-width: 75px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.locales-block:hover {
+    cursor: pointer;
+}
+
+.locale-title {
+    display: block;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.locale-title:hover {
+    cursor: pointer;
+}
+
+.caret {
+    margin-top: 6px;
+    display: block;
+    border: 6px solid transparent;
+    border-top: 6px solid white;
+    width: 0;
+}
+
+.locales-list {
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    top: 100%;
+    right: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .locales-container {
+        padding: 25px 20px 0 0;
+    }
+
+    .locales-list {
+        min-height: 80px;
+        right: 20px;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    width: 100%;
+}
+
+.App-logo {
+    margin-top: 60px;
+    pointer-events: none;
+    width: 400px;
+}
+
+.title {
+    margin: 150px 0 45px 0;
+    font-size: 24px;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    margin-left: 8px;
+}
+
+.load-in {
+    font-size: 8px;
+    margin: 0;
+}
+
+.store {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 14px;
+}
+
+.bottom-button {
+    margin-top: 30px;
+}
+
+.bottom-button-text {
+    display: block;
+    font-size: 20px;
+    padding-top: 5px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+a.bottom-button {
+    text-decoration: none;
+}
+
+.bottom-button button {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .App-logo {
+        width: 75%;
+    }
+
+    .title {
+        margin: 85px 0 15px 0;
+        padding: 20px;
+    }
+
+    .bottom-button {
+        width: 100%;
+    }
+}
